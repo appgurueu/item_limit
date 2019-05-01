@@ -1,0 +1,12 @@
+{
+  "player_inventory_lists": ["main", "craft"],
+  "limits" : {
+    "by_item_name" : {},
+    "by_group_name" : {}
+  },
+  "disable_item_override" : false,
+  "disable_node_drop_override" : false,
+  "disable_on_craft" : false,
+  "disable_on_inventory_action" : false,
+  "disable_itemlimit_skip" : false
+}
