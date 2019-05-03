@@ -35,7 +35,7 @@ local config=conf.import("item_limit", {
     }
 })
 
-table_ext.add_all(_G, config)
+table_ext.add_all(getfenv(1), config)
 
 function count(inv_ref, match_function) -- Calls match function with the item name
     local count=0
