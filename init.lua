@@ -1,1 +1,1 @@
-include_mod("item_limit")
+modlib.mod.init("item_limit")
