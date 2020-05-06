@@ -159,8 +159,8 @@ if not disable_item_override then
             self:set_item(self.stack:to_string()) -- Set the item
         end,
 
-        on_step = function(self, dtime)
-            builtin_item.on_step(self, dtime)
+        on_step = function(self, dtime, ...)
+            builtin_item.on_step(self, dtime, ...)
         end
     }
     -- override, default builtin item as fallback
