@@ -25,7 +25,7 @@ Licensed under the MIT License. Written by Lars Mueller alias LMD or appguru(eu)
 
 * [GitHub](https://github.com/appgurueu/item_limit) - sources, issue tracking, contributing
 * [Discord](https://discordapp.com/invite/ysP74by) - discussion, chatting
-* [Minetest Forum](https://forum.minetest.net/viewtopic.php?f=9&t=24211) - (more organized) discussion
+* [Minetest Forum](https://forum.minetest.net/viewtopic.php?t=22346) - (more organized) discussion
 * [ContentDB](https://content.minetest.net/packages/LMD/item_limit) - releases (cloning from GitHub is recommended)
 
 # Configuration
