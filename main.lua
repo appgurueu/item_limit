@@ -1,5 +1,3 @@
-modlib.log.create_channel("item_limit") -- Create log channel
-
 -- Load config
 local config=modlib.conf.import("item_limit", {
     type = "table",
@@ -86,22 +84,7 @@ end
 
 if not disable_itemlimit_skip then
     minetest.register_privilege("itemlimit_skip",
-            { name="Player can ignore item limit restrictions",give_to_singleplayer=false,
-              on_grant=function(name, granter_name)
-                  if not granter_name then
-                      modlib.log.write("item_limit", "Player "..name.." was granted the itemlimit_skip privilege.")
-                  else
-                      modlib.log.write("item_limit", "Player "..granter_name.." granted player "..name.." the itemlimit_skip privilege.")
-                  end
-              end,
-              on_revoke=function(name, revoker_name)
-                  if not revoker_name then
-                      modlib.log.write("item_limit", "Player "..name.." lost the itemlimit_skip privilege.")
-                  else
-                      modlib.log.write("item_limit", "Player "..revoker_name.." revoked the itemlimit_skip privilege of player "..name..".")
-                  end
-              end
-            })
+            { name="Player can ignore item limit restrictions",give_to_singleplayer=false })
     function has_itemlimit_skip(player_or_name)
         local ret,_ minetest.check_player_privs(player_or_name, {"itemlimit_skip"})
         return ret
