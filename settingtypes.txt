@@ -1,8 +1,7 @@
+[item_limit.limits]
 
-item_limit.disable_itemlimit_skip (Item limit disable_itemlimit_skip) bool false
-item_limit.disable_on_craft (Item limit disable_on_craft) bool false
-item_limit.disable_item_override (Item limit disable_item_override) bool false
-item_limit.disable_on_inventory_action (Item limit disable_on_inventory_action) bool false
+[*item_limit.limits.by_group_name]
 
+[*item_limit.limits.by_item_name]
 
-item_limit.disable_node_drop_override (Item limit disable_node_drop_override) bool false
+[item_limit.player_inventory_lists]
